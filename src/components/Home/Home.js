@@ -18,15 +18,24 @@ const Home = () => {
         <h2>this is for info</h2>
         <div>
           <img src="" alt="" />
+        </div>
+        <div className="name-info">
           <p>Name</p>
           <p>
-            <small>Bangladesh</small>
+            <small> Dhaka,Bangladesh</small>
           </p>
         </div>
         <div className="personal-info">
           <p>50kg</p>
-          <p>5.1inch</p>
+          <p>5.1 inch</p>
           <p>50 years</p>
+        </div>
+        <p>Add a Break</p>
+        <div className="break-btn">
+          <button>10s</button>
+          <button>20s</button>
+          <button>30s</button>
+          <button>40s</button>
         </div>
       </div>
     </div>
