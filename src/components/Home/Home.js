@@ -31,11 +31,24 @@ const Home = () => {
           <p>50 years</p>
         </div>
         <p>Add a Break</p>
-        <div className="break-btn">
-          <button>10s</button>
-          <button>20s</button>
-          <button>30s</button>
-          <button>40s</button>
+        <div className="btn-container">
+          <button className="break-btn">10s</button>
+          <button className="break-btn">20s</button>
+          <button className="break-btn">30s</button>
+          <button className="break-btn">40s</button>
+          <button className="break-btn">50s</button>
+        </div>
+        <div>
+          <p>WorkOut Details</p>
+          <div className="workout">
+            <p>Workout time</p>
+          </div>
+          <div className="break">
+            <p>Break Time</p>
+          </div>
+          <div>
+            <button className="complete-btn">Activity completed</button>
+          </div>
         </div>
       </div>
     </div>
