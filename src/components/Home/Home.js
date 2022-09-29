@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Workouts from "../Workouts/Workouts";
-// import Workout from "../Workout/Workout";
+import Workout from "../Workout/Workout";
 import { ToastContainer, toast } from "react-toastify";
 const Home = () => {
   const [workouts, setWorkouts] = useState([]);
@@ -14,15 +14,24 @@ const Home = () => {
       .then((data) => setWorkouts(data));
   }, []);
   const handleBreak = (seecond) => {};
-  console.log();
+
   const handleActivity = () => {
     toast("Completed");
+  };
+  const handleAddToCart = (time) => {
+    const totalTime = [...cart, time];
+    setCart(totalTime);
   };
   return (
     <div className="home-container">
       <div className="">
         <h2>Select today's exercise</h2>
-        <Workouts workouts={workouts} cart={cart} setCart={setCart}></Workouts>
+        <Workouts
+          workouts={workouts}
+          cart={cart}
+          setCart={setCart}
+          handleAddToCart={handleAddToCart}
+        ></Workouts>
       </div>
       <div>
         <h2> Sanjida Akhanda</h2>
@@ -33,7 +42,7 @@ const Home = () => {
         <div className="personal-info">
           <p>50kg</p>
           <p>5.1 inch</p>
-          <p>50 years</p>
+          <p>33 years</p>
         </div>
         <p>Add a Break</p>
 
@@ -48,7 +57,6 @@ const Home = () => {
           <p>WorkOut Details</p>
           <div className="workout">
             <p>Workout time</p>
-            {workouts.map((workout) => workout.time)}
           </div>
           <div className="break">
             <p>Break Time</p>

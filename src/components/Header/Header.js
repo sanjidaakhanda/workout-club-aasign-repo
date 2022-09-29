@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./Header.css";
 const Header = () => {
   return (
-    <div>
-      <h1>Workout club</h1>
+    <div className="container">
+      <h1 className="header">Workout club</h1>
     </div>
   );
 };
