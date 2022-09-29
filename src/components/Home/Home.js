@@ -21,15 +21,10 @@ const Home = () => {
         <Workouts workouts={workouts} cart={cart} setCart={setCart}></Workouts>
       </div>
       <div>
-        <h2>this is for info</h2>
-        <div>
-          <img src="" alt="" />
-        </div>
+        <h2> Sanjida Akhanda</h2>
+
         <div className="name-info">
-          <p>Name</p>
-          <p>
-            <small> Dhaka,Bangladesh</small>
-          </p>
+          <p>Dhaka,Bangladesh</p>
         </div>
         <div className="personal-info">
           <p>50kg</p>
@@ -37,7 +32,7 @@ const Home = () => {
           <p>50 years</p>
         </div>
         <p>Add a Break</p>
-        {}
+
         <div onClick={handleBreak()} className="btn-container">
           <button className="break-btn">10s</button>
           <button className="break-btn">20s</button>
@@ -49,7 +44,7 @@ const Home = () => {
           <p>WorkOut Details</p>
           <div className="workout">
             <p>Workout time</p>
-            {cart.map((w) => w.workout.time)}
+            {workouts.map((workout) => workout.time)}
           </div>
           <div className="break">
             <p>Break Time</p>
@@ -63,6 +58,7 @@ const Home = () => {
       <div>
         <div className="container">
           <p className="blog"> Question-1.How does react work?</p>
+
           <p>
             Answer-ReactJS is one of the most popular JavaScript libraries for
             mobile and web application development.
