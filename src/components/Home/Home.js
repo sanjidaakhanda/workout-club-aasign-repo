@@ -5,18 +5,15 @@ import Workouts from "../Workouts/Workouts";
 const Home = () => {
   const [workouts, setWorkouts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [second, setSecond] = useState([]);
 
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setWorkouts(data));
   }, []);
-  //   const handleAddToCart = () => {
-  //     const info = time;
-  //     const totalTime = info + 1;
-  //     setCart(totalTime);
-  //   };
-
+  const handleBreak = () => {};
+  console.log(second);
   return (
     <div className="home-container">
       <div className="">
@@ -40,7 +37,8 @@ const Home = () => {
           <p>50 years</p>
         </div>
         <p>Add a Break</p>
-        <div className="btn-container">
+        {}
+        <div onClick={handleBreak()} className="btn-container">
           <button className="break-btn">10s</button>
           <button className="break-btn">20s</button>
           <button className="break-btn">30s</button>
@@ -51,7 +49,7 @@ const Home = () => {
           <p>WorkOut Details</p>
           <div className="workout">
             <p>Workout time</p>
-            {workouts.map((workout) => workout.totalTime)}
+            {workouts.map((workout) => workout.time)}
           </div>
           <div className="break">
             <p>Break Time</p>
@@ -59,6 +57,20 @@ const Home = () => {
           <div>
             <button className="complete-btn">Activity completed</button>
           </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="container">
+          <p>what is react</p>
+          <p>
+            Answer-react is Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Quia fuga id voluptate dicta consectetur sequi, veniam minus
+            nobis. Nemo vero reprehenderit culpa consectetur aliquam, labore
+            repellat distinctio eius voluptatibus saepe!
+          </p>
+          <p>Difference between</p>
+          <p>Answer-loremlkj jdjd jsksk kshskd </p>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import "./Workout.css";
 const Workout = ({ workout, cart, setCart }) => {
   const { img, name, time, age } = workout;
   const handleAddToCart = () => {
-    const totalTime = time + workout.time;
+    const totalTime = parseInt(time);
     setCart(totalTime);
   };
 
@@ -14,7 +14,7 @@ const Workout = ({ workout, cart, setCart }) => {
       <p> Name:{name}</p>
       <p> Age:{age}</p>
       <p>Time:{time}</p>
-      <button onClick={handleAddToCart} className="add-btn">
+      <button onClick={() => handleAddToCart(time)} className="add-btn">
         Add to cart
       </button>
     </div>
