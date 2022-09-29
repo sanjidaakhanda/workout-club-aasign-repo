@@ -3,7 +3,7 @@ import "./Workout.css";
 const Workout = ({ workout, cart, setCart }) => {
   const { img, name, time, age } = workout;
   const handleAddToCart = () => {
-    const totalTime = parseInt(time);
+    const totalTime = parseFloat(time);
     setCart(totalTime);
   };
 

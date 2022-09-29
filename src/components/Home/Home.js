@@ -49,7 +49,7 @@ const Home = () => {
           <p>WorkOut Details</p>
           <div className="workout">
             <p>Workout time</p>
-            {workouts.map((workout) => workout.time)}
+            {cart.map((w) => w.workout.time)}
           </div>
           <div className="break">
             <p>Break Time</p>
@@ -62,15 +62,22 @@ const Home = () => {
 
       <div>
         <div className="container">
-          <p>what is react</p>
+          <p className="blog"> Question-1.How does react work?</p>
           <p>
-            Answer-react is Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Quia fuga id voluptate dicta consectetur sequi, veniam minus
-            nobis. Nemo vero reprehenderit culpa consectetur aliquam, labore
-            repellat distinctio eius voluptatibus saepe!
+            Answer-ReactJS is one of the most popular JavaScript libraries for
+            mobile and web application development.
           </p>
-          <p>Difference between</p>
-          <p>Answer-loremlkj jdjd jsksk kshskd </p>
+          <p className="blog">Question-2.Difference between props and state?</p>
+          <p>
+            Answer-Main difference is props- props get passed to the
+            component.and State-whereas state is managed within the component.{" "}
+          </p>
+          <p className="blog">Question-3. How UseEffect works? </p>
+          <p>
+            Answer-UseEffect do tasks like updating the DOM, fetching data from
+            API end-points, setting up subscriptions or timers, etc can be lead
+            to unwarranted side-effects.
+          </p>
         </div>
       </div>
     </div>
