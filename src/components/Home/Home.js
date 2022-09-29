@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Workouts from "../Workouts/Workouts";
 // import Workout from "../Workout/Workout";
+import { ToastContainer, toast } from "react-toastify";
 const Home = () => {
   const [workouts, setWorkouts] = useState([]);
   const [cart, setCart] = useState([]);
@@ -12,8 +13,11 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setWorkouts(data));
   }, []);
-  const handleBreak = () => {};
-  console.log(second);
+  const handleBreak = (seecond) => {};
+  console.log();
+  const handleActivity = () => {
+    toast("Completed");
+  };
   return (
     <div className="home-container">
       <div className="">
@@ -24,7 +28,7 @@ const Home = () => {
         <h2> Sanjida Akhanda</h2>
 
         <div className="name-info">
-          <p>Dhaka,Bangladesh</p>
+          <p>Massachusetts,USA</p>
         </div>
         <div className="personal-info">
           <p>50kg</p>
@@ -50,7 +54,10 @@ const Home = () => {
             <p>Break Time</p>
           </div>
           <div>
-            <button className="complete-btn">Activity completed</button>
+            <button onClick={handleActivity} className="complete-btn">
+              Activity completed
+            </button>
+            <ToastContainer />
           </div>
         </div>
       </div>
