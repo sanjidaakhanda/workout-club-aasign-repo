@@ -1,18 +1,27 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Workouts from "../Workouts/Workouts";
+// import Workout from "../Workout/Workout";
 const Home = () => {
   const [workouts, setWorkouts] = useState([]);
+  const [cart, setCart] = useState([]);
+
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setWorkouts(data));
   }, []);
+  //   const handleAddToCart = () => {
+  //     const info = time;
+  //     const totalTime = info + 1;
+  //     setCart(totalTime);
+  //   };
+
   return (
     <div className="home-container">
       <div className="">
         <h2>Select today's exercise</h2>
-        <Workouts workouts={workouts}></Workouts>
+        <Workouts workouts={workouts} cart={cart} setCart={setCart}></Workouts>
       </div>
       <div>
         <h2>this is for info</h2>
@@ -42,6 +51,7 @@ const Home = () => {
           <p>WorkOut Details</p>
           <div className="workout">
             <p>Workout time</p>
+            {workouts.map((workout) => workout.totalTime)}
           </div>
           <div className="break">
             <p>Break Time</p>

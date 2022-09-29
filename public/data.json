@@ -2,42 +2,42 @@
   {
     "id": 1,
     "name": "Dumbbell",
-    "time": "30 mins",
+    "time": 30,
     "age": "20-60",
     "img": "https://img.freepik.com/free-photo/medium-shot-women-doing-sport-outdoors_23-2149161220.jpg?w=900&t=st=1664401044~exp=1664401644~hmac=f0c738bf33a5294e0a587c53250e0c37fbcffc97014b3f3c4c59e698d1d014c9 "
   },
   {
     "id": 2,
     "name": "Running",
-    "time": "30 mins",
+    "time": 30,
     "age": "20-60",
     "img": "https://as1.ftcdn.net/v2/jpg/02/45/44/36/1000_F_245443659_HPwPc1xWtr3IMKluuV3MmlwCw97W2zJ9.jpg"
   },
   {
     "id": 3,
     "name": "Relaxing",
-    "time": "60 mins",
+    "time": 60,
     "age": "20-60",
     "img": "https://img.freepik.com/free-photo/woman-relaxing-wooden-pier-lake-with-cup-coffee_181624-56332.jpg?w=826&t=st=1664401589~exp=1664402189~hmac=a149087227aa64b2312ec21cd55c321664c1c80545d682238a5b574e755a54a9"
   },
   {
     "id": 4,
     "name": "Yoga",
-    "time": "30 mins",
+    "time": 30,
     "age": "10-30",
     "img": "https://img.freepik.com/free-photo/woman-practicing-yoga-with-sun-her_1286-172.jpg?1&w=826&t=st=1664401262~exp=1664401862~hmac=3d5a4771cc7e1a23070ae57f0f0d60479b26e719113dbe94142ab1bbdd84ec08"
   },
   {
     "id": 5,
     "name": "Dumbbell",
-    "time": "30 mins",
+    "time": 30,
     "age": "20-50",
     "img": "https://img.freepik.com/free-photo/active-fitness-trainer-woman-tights-style-80s-demonstrates-exercise-hands-fit-ball_197531-16589.jpg?w=826&t=st=1664401185~exp=1664401785~hmac=d20aaf8fbb304d34cbc188ecc4974cdec62dd72a2f7aad1aef7cfbaf3c84b577"
   },
   {
     "id": 6,
     "name": "Boxing",
-    "time": "30 mins",
+    "time": 30,
     "age": "20-50",
     "img": "https://img.freepik.com/premium-photo/dark-skinned-african-american-woman-posing-tracksuit-doing-sports_163305-963.jpg?w=740"
   }
